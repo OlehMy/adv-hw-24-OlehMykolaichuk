@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/adv-hw-24-OlehMykolaichuk/static/css/main.9e93b6a9.chunk.css",
+    "main.js": "/adv-hw-24-OlehMykolaichuk/static/js/main.c7534bab.chunk.js",
+    "main.js.map": "/adv-hw-24-OlehMykolaichuk/static/js/main.c7534bab.chunk.js.map",
+    "runtime-main.js": "/adv-hw-24-OlehMykolaichuk/static/js/runtime-main.067f8d74.js",
+    "runtime-main.js.map": "/adv-hw-24-OlehMykolaichuk/static/js/runtime-main.067f8d74.js.map",
+    "static/js/2.014da9e6.chunk.js": "/adv-hw-24-OlehMykolaichuk/static/js/2.014da9e6.chunk.js",
+    "static/js/2.014da9e6.chunk.js.map": "/adv-hw-24-OlehMykolaichuk/static/js/2.014da9e6.chunk.js.map",
+    "static/js/3.84fd2dd1.chunk.js": "/adv-hw-24-OlehMykolaichuk/static/js/3.84fd2dd1.chunk.js",
+    "static/js/3.84fd2dd1.chunk.js.map": "/adv-hw-24-OlehMykolaichuk/static/js/3.84fd2dd1.chunk.js.map",
+    "index.html": "/adv-hw-24-OlehMykolaichuk/index.html",
+    "static/css/main.9e93b6a9.chunk.css.map": "/adv-hw-24-OlehMykolaichuk/static/css/main.9e93b6a9.chunk.css.map",
+    "static/js/2.014da9e6.chunk.js.LICENSE.txt": "/adv-hw-24-OlehMykolaichuk/static/js/2.014da9e6.chunk.js.LICENSE.txt",
+    "static/media/morty.81d7c44c.jpg": "/adv-hw-24-OlehMykolaichuk/static/media/morty.81d7c44c.jpg",
+    "static/media/mr-poopybutthole.bb7c19f4.jpg": "/adv-hw-24-OlehMykolaichuk/static/media/mr-poopybutthole.bb7c19f4.jpg",
+    "static/media/rick.300a04ec.jpg": "/adv-hw-24-OlehMykolaichuk/static/media/rick.300a04ec.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.067f8d74.js",
+    "static/js/2.014da9e6.chunk.js",
+    "static/css/main.9e93b6a9.chunk.css",
+    "static/js/main.c7534bab.chunk.js"
+  ]
+}
