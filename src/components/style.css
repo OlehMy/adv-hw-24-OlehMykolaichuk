@@ -1,0 +1,237 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.header {
+    background-color: darksalmon;
+    color: black;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-family: 'Audiowide', sans-serif;
+    align-items: center;
+}
+
+.header ul {    
+    list-style-type: none;
+}
+
+.header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    transition: all 0.3s linear;
+}
+
+.header li {
+    position: relative;
+    margin: 5px 15px;
+}
+
+.header li:after {
+    position: absolute;
+    left: 50%;
+    content: '';    
+    height: 2px;
+    background: rgb(0, 133, 133);
+    transition: all 0.3s linear;
+    width: 0;
+    bottom: -2px;  
+}
+
+.header li:hover:after {
+    width: 100%;
+    margin-left: -50%;                
+}
+
+.header a:hover {
+    color: rgb(0, 133, 133);
+}
+
+li .active {    
+    color: rgb(0, 133, 133);
+}
+
+.home {
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home img {
+    width: 180px;
+    animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(720deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+
+.home h2 {
+  margin: 30px auto;
+  font-size: 150px;
+  font-weight: 400;
+  text-align: center;
+  color: darksalmon;
+  font-family: 'Fredericka the Great', sans-serif;
+}
+
+.inputs {
+    font-family: 'Roboto', sans-serif;
+    border: darksalmon 2px solid;
+    border-radius: 15px; 
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 100px 10px 50px;
+    max-width: 360px;
+}
+
+.inputs__header {
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+
+input {    
+    width: 300px;
+    height: 50px;
+    border: 2px solid darksalmon;
+    border-radius: 5px;
+    background-color: black;
+    outline-style: none;
+    color: darksalmon;
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.inputs__button {
+    margin: 20px 0 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 30px;
+    outline: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    background-color: cyan;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.inputs__button:hover,
+.inputs__button:disabled {
+    background-color: black;
+    color: cyan;
+}
+.inputs__button:disabled{
+    cursor: default;
+}
+
+.users__wrapper {
+    margin: 5vh auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.user {
+    width: 450px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid darksalmon;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8);    
+    color: darksalmon;
+    margin: 50px;
+    font-size: 18px;
+}
+
+.user span {
+    color: cyan;
+}
+
+.user__photo {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50%;
+    -webkit-transition: border-radius .3s ease-in-out;
+    transition: border-radius .3s ease-in-out;
+}
+
+.user__photo:hover {
+    border-radius: 15px;
+}
+
+.user__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user p {
+    padding: 10px 10px;
+}
+
+.error {
+    font-size: 36px;
+    height: 80vh;
+    font-family: 'Fredericka the Great', sans-serif;
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 100px;
+        font-size: 14px;
+    }
+    .header ul {    
+        flex-direction: column;
+        align-items: center;
+    }
+    .home h2 {
+        font-size: 70px;
+    }
+    .home img {
+        width: 100px;
+    }
+    input,
+    .inputs__button {
+        width: fit-content;
+        min-width: 200px;
+    }
+    .user {
+        width: 250px;
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+    .user__photo {
+        margin: 20px;
+    }
+  }
